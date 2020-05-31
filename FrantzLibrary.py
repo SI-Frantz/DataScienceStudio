@@ -58,10 +58,10 @@ def meanv(matrix: list) -> list:
     
  # WORD EMBEDDING FUNCTIONS: 
  
- def get_vec(s:str) -> list:
+def get_vec(s:str) -> list:
   return nlp.vocab[s].vector.tolist()
- 
- def sent2vec(sentence:str) -> list:
+
+def sent2vec(sentence:str) -> list:
   doc = nlp(sentence)
   word_list = []
   word_vec_list = []
