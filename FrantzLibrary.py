@@ -1,4 +1,5 @@
-import numpy
+# IMPORT DEPENDENCIES:
+
 from typing import TypeVar, Callable
 narray = TypeVar('numpy.ndarray')
 import numpy as np
@@ -9,6 +10,7 @@ os.system("python -m spacy download en_core_web_md")
 !python -m spacy download en_core_web_md
 import en_core_web_md
 nlp = en_core_web_md.load()
+print("DEBUGGING", type(nlp))
 
 # VECTOR FUNCTIONS: 
 
